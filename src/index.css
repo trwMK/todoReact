@@ -1,13 +1,71 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-wrapper {
+  background-color: lightsteelblue;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+.todoForm {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.todo > h3 {
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+}
+
+.todo-input {
+  border-radius: 5px;
+  border: 1px aqua solid;
+  padding: 5px;
+}
+
+.change-btn {
+  background: lightcoral;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  margin-left: 10px;
+  border-radius: 20px;
+
+  cursor: pointer;
+}
+
+.todo-btn {
+  padding: 5px 10px 5px 10px;
+  margin-left: 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.todo-btn:hover {
+  background-color: aquamarine;
 }
